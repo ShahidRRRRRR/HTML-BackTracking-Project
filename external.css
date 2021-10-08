@@ -7,9 +7,15 @@ p{
 
 
 pre {
-    font-size: 17.5px;
-    color:rgb(110, 20, 6);
-    font-family:Arial, Helvetica, sans-serif;
+    
+    color: #660000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
    
+}
+
+#brown{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #660000;
+    font-style: normal;
 }
 
