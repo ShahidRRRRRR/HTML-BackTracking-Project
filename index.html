@@ -440,6 +440,110 @@
         Jump ahead over exactly one marble of the opposite color, if the space just beyond that marble is clear.
     </li>
 </ul>
+<p>For example, you could make the following sequence of moves:</p>
+
+<tbody><tr> 
+    <td><b>Starting position:</b></td>
+    <td> 
+      <table align="center" bgcolor="#dddddd" border="1" cellpadding="6" cellspacing="0">
+        <tbody><tr> 
+          <td width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td width="44">&nbsp;</td>
+          <td width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+          <td width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr> 
+    <td><b>Black moves ahead:</b></td>
+    <td> 
+      <table align="center" bgcolor="#dddddd" border="1" cellpadding="6" cellspacing="0">
+        <tbody><tr> 
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44">&nbsp;</td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr> 
+    <td><b>White jumps:</b></td>
+    <td> 
+      <table align="center" bgcolor="#dddddd" border="1" cellpadding="6" cellspacing="0">
+        <tbody><tr> 
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44">&nbsp;</td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr> 
+    <td><b>Black moves ahead:</b></td>
+    <td> 
+      <table align="center" bgcolor="#dddddd" border="1" cellpadding="6" cellspacing="0">
+        <tbody><tr> 
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44">&nbsp;</td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr> 
+    <td><b>Black jumps:</b></td>
+    <td> 
+      <table align="center" bgcolor="#dddddd" border="1" cellpadding="6" cellspacing="0">
+        <tbody><tr> 
+          <td height="44" width="44">&nbsp;</td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="44" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr> 
+    <td><b>White moves ahead:</b></td>
+    <td> 
+      <table align="center" bgcolor="#dddddd" border="1" cellpadding="6" cellspacing="0">
+        <tbody><tr> 
+          <td height="59" width="44">&nbsp;</td>
+          <td height="59" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+          <td height="59" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="59" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/black-ball.gif" height="44" width="44"></td>
+          <td height="59" width="44"><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/white-ball.gif" height="44" width="44"></td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  <tr> 
+    <td><b>Stuck!</b></td>
+    <td>&nbsp; </td>
+  </tr>
+</tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br>
 <table border="1px" align="center">
     <thead>
